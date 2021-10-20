@@ -21,8 +21,6 @@ var namespacePrefix = `framework.controllers.${baseFileName}.`;
  * @param {string} appConfigPath The path of the configuration files for the application layer.
  * @param {string} frameworkConfigPath The path of the configuration files for the framework layer.
  * @return {void}
- * @author Seth Hollingsead
- * @date 2021/10/13
  */
 function setupConfiguration(appConfigPath, frameworkConfigPath) {
   let functionName = setupConfiguration.name;

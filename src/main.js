@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 /**
  * @file main.js
  * @module main
@@ -8,7 +12,7 @@
  * @date 2021/10/12
  * @copyright Copyright © 2021-… by Glenn Butler. All rights reserved
  */
-import warden from './controllers/warden';
+var warden = require('./controllers/warden');
 var path = require('path');
 var baseFileName = path.basename(module.filename, path.extname(module.filename));
 var namespacePrefix = `framework.${baseFileName}.`;
@@ -19,8 +23,6 @@ var namespacePrefix = `framework.${baseFileName}.`;
  * @param {object} clientConfiguration A configuration data object that contains
  * all the data needed to bootstrap the framework for a client application.
  * @return {void}
- * @author Glenn Butler
- * @date 2021/10/12
  */
 function initFramework(clientConfiguration) {
   let functionName = initFramework.name;
@@ -34,6 +36,4 @@ function initFramework(clientConfiguration) {
   console.log(`END ${namespacePrefix}${functionName} function`);
 };
 
-export default {
-  initFramework
-};
+module.exports = initFramework;

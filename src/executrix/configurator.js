@@ -21,8 +21,6 @@ var namespacePrefix = `framework.controllers.${baseFileName}.`;
  * @description Sets a configuration setting on the configuration data structure stored on the D-data structure.
  * @param {string} configurationName The key of the configuration setting.
  * @param {string|integer|boolean|double} configurationValue The value of the configuration setting.
- * @author Glenn Butler
- * @date 2021/10/13
  */
 function setConfigurationSetting(configurationName, configurationValue) {
   let functionName = setConfigurationSetting.name;
@@ -43,8 +41,6 @@ function setConfigurationSetting(configurationName, configurationValue) {
  * @description Gets a configuration value based on the configuration name.
  * @param {string} configurationName The key of the configuration setting.
  * @return {string|integer|boolean|double} The value of whatever was stored in the D[configuration].
- * @author Seth Hollingsead
- * @date 2021/10/13
  */
 function getConfigurationSetting(configurationName) {
   let functionName = getConfigurationSetting.name;

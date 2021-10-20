@@ -22,8 +22,6 @@ var namespacePrefix = `framework.controllers.${baseFileName}.`;
  * But what we really need for the root path is just C:/calculator2/
  * @param {object} configData All of the configuration data that should be parsed as part of the setup process.
  * @return {string} the true root path of the application.
- * @author Glenn Butler
- * @date 2021/10/12
  */
  function processRootPath(configData) {
    let functionName = processRootPath.name;
@@ -72,8 +70,6 @@ var namespacePrefix = `framework.controllers.${baseFileName}.`;
  * @description Setup all the framework data and configuration settings.
  * @param {object} configData All of the configuration data that should be parsed as part of the setup process.
  * @return {void}
- * @author Seth Hollingsead
- * @date 2021/10/12
  */
 function initFrameworkSchema(configData) {
   let functionName = initFrameworkSchema.name;
@@ -87,7 +83,7 @@ function initFrameworkSchema(configData) {
   console.log(`END ${namespacePrefix}${functionName} function`);
 };
 
-export default {
+module.exports = {
   processRootPath,
   initFrameworkSchema
 };
